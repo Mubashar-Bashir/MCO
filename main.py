@@ -27,7 +27,13 @@ async def online_status():
     Example tool to check online status.
     """
     return {"status": "Online"}
-
+@mcp.tool("Search_Online")
+async def Search_Online(query: str):
+    """
+    Example tool to search online for a query.
+    """
+    # Simulate an online search
+    return {"query": query, "results": ["Result 1", "Result 2", "Result 3"]}
 
 # step 4: Run the FastMCP server with the specified host and port
 if __name__ == "__main__":
